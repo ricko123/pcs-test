@@ -1,0 +1,140 @@
+.header-home, .header-notif{
+    padding: 15px 0px;
+    h1{
+        font-size: 32px;
+        color:#fa1b1b ;
+    }
+}
+.header-notif{
+    @include boxshadow(0px 4px 5px 0px rgba(143,143,143,0.75));
+    padding: 20px 0px;
+    h1{
+        margin-bottom: 0;
+    }
+    img{
+        width:25px;
+        height:25px;
+        object-fit:contain;
+        margin-right:15px;
+    }
+}
+.greetings{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.card-member{
+    @include border-rad(10px);
+    background-color: #fa1b1b;
+    padding: 15px;
+    color: #FFF;
+    .img-user{
+        width: 65px;
+        height: 65px;
+        object-fit: contain;
+        margin-right: 10px;
+    }
+    .caption-card{
+        .name{
+            font-weight: bold;
+            font-size: 20px;
+        }
+       .title{
+        font-size: 14px;
+       }
+    }
+    .unit-kerja{
+        font-weight: bold;
+    }
+    .since-title{
+        font-size: 14px;
+    }
+    .date-join{
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+.title-content{
+    margin-bottom: 15px;
+    h3{
+        font-size: 25px;
+    }
+}
+.time-activity{
+    text-align: center;
+    img{
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+    h4{
+        font-size: 23px;
+        font-weight: bold;
+        color: #000;
+        &.working-hours{
+            color: #fa1b1b;
+        }
+    }
+    p{
+        font-size: 15px;
+    }
+}
+.owl-carousel{ 
+    .owl-item{
+        .item{
+            @include border-rad(10px);
+            @include boxshadow(1px 4px 5px 1px rgba(143,143,143,0.75));
+            margin-bottom: 10px;
+            padding: 10px;
+            .img-user-slide{
+                width: 45px;
+                height: 45px;
+                object-fit: contain;
+                @include border-rad(50%);
+                margin-right: 5px;
+            }
+            span{
+                color: #fa1b1b;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            p{
+                margin-bottom: 0;
+                font-size: 14px;
+            }
+            .desc{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    @include boxshadow(1px -5px 5px 1px rgba(143,143,143,0.75));
+    background-color:#FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    min-height: 30px;
+    z-index: 2;
+}
+.link-menu{
+    color: #4F4F4F;
+    font-size: 10px;
+    text-align: center;
+    .img-link-center{
+        padding:12px;
+        background-color: #fa1b1b;
+        @include border-rad(50%);
+        width: 50px;
+        height: 50px;
+        margin-top: -40%;
+    }
+    img{
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+}
